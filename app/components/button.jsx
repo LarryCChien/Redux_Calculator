@@ -1,7 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const btnFunc = (text, clickFunc) => (
-    <button type="button" onClick={(e) => { e.preventDefault(); clickFunc(); }}>{text}</button>
+const BtnFunc = ({ text, onClick }) => (
+    <button type="button" onClick={onClick}>{text}</button>
 );
 
-export default btnFunc;
+BtnFunc.propTypes = {
+    text: PropTypes.func.isRequired,
+    onClick: PropTypes.func.isRequired,
+};
+
+export default BtnFunc;

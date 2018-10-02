@@ -27,18 +27,14 @@ const calculateNumber = (state) => {
     default:
         answer = 0;
     }
-    return Object.assign({}, state, {
-        frontNum: 0,
-        backNum: answer,
-        countType: null,
-    });
+    return answer;
 };
 const calculator = (state = initState, action) => {
     switch (action.type) {
     // 輸入數字
     case actionTypes.NUM:
         return Object.assign({}, state, {
-            backNum: state.backNum * 10 + action.number,
+            backNum: state.backNum * 10 + action.num,
         });
     // 輸入加減乘除
     case actionTypes.ADD:
