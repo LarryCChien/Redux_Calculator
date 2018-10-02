@@ -8,7 +8,7 @@ export const multiNumber = () => ({ type: actionTypes.MULTI });
 
 export const diviNumber = () => ({ type: actionTypes.DIVI });
 
-export const resetNumber = num => ({ type: actionTypes.RESET, num });
+export const resetNumber = () => ({ type: actionTypes.RESET });
 
 export const countNumber = () => ({ type: actionTypes.CALCULATE });
 

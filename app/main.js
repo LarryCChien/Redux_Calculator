@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import calculateReducer from './reducers/reducers';
 import App from './components/app';
-// import '../style/todoItems.scss';
+import '../style/calculate.scss';
 
 function main() {
     const store = createStore(calculateReducer);
