@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import * as actionTypes from '../actions/actionTypes';
 
-// const calBoard = [...Array(10).keys()];
 const initState = {
     frontNum: 0, // 被加數、被減數、被乘數、被除數
     backNum: 0, // 加數、減數、乘數、除數
